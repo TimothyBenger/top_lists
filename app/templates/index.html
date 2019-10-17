@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Hi, {{ current_user.username }}.</h1>
+    <p><h3>View or edit your top 5 favourite books below</h3></p>
+    {% for book in books %}
+    <div><p>{{ book.rank }} | {{ book.title }} | {{ book.author }} </p></div>
+    {% endfor %}
+    <a href="{{ url_for('edit') }}">Edit</a>
+{% endblock %}

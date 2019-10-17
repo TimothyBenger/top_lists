@@ -1,0 +1,85 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+	<form action="" method="post" novalidate>
+        {{ form.hidden_tag() }}
+        <p><b><u>1</u></b></p>
+        <p>
+            {{ form.title1.label }}<br>
+            {{ form.title1(size=32, value=existing_data[0].title) }}<br>
+            {% for error in form.title1.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+        <p>
+            {{ form.author1.label }}<br>
+            {{ form.author1(size=32, value=existing_data[0].author) }}<br>
+            {% for error in form.author1.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+        <p><b><u>2</u></b></p>
+        <p>
+            {{ form.title2.label }}<br>
+            {{ form.title2(size=32, value=existing_data[1].title) }}<br>
+            {% for error in form.title2.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+        <p>
+            {{ form.author2.label }}<br>
+            {{ form.author2(size=32, value=existing_data[1].author) }}<br>
+            {% for error in form.author2.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+        <p><b><u>3</u></b></p>
+        <p>
+            {{ form.title3.label }}<br>
+            {{ form.title3(size=32, value=existing_data[2].title) }}<br>
+            {% for error in form.title3.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+        <p>
+            {{ form.author3.label }}<br>
+            {{ form.author3(size=32, value=existing_data[2].author) }}<br>
+            {% for error in form.author3.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+        <p><b><u>4</u></b></p>
+        <p>
+            {{ form.title4.label }}<br>
+            {{ form.title4(size=32, value=existing_data[3].title) }}<br>
+            {% for error in form.title4.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+        <p>
+            {{ form.author4.label }}<br>
+            {{ form.author4(size=32, value=existing_data[3].author) }}<br>
+            {% for error in form.author4.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+        <p><b><u>5</u></b></p>
+        <p>
+            {{ form.title5.label }}<br>
+            {{ form.title5(size=32, value=existing_data[4].title) }}<br>
+            {% for error in form.title5.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+        <p>
+            {{ form.author5.label }}<br>
+            {{ form.author5(size=32, value=existing_data[4].author) }}<br>
+            {% for error in form.author5.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>   
+        <p>{{ form.submit() }}</p>
+    </form>
+
+{% endblock %}
