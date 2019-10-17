@@ -1,3 +1,5 @@
-# Welcome to Microblog!
+# Welcome to Top Lists
 
-This is an example application featured in my [Flask Mega-Tutorial](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world). See the tutorial for instructions on how to work with it.
+Top Lists is a RESTful web application built in python using the Flask web framework.
+
+Allowing a user to log in and create / edit a list of their top 5 favourite books, it demonstrates the Create, Read, Update, Delete (CRUD) principles.
